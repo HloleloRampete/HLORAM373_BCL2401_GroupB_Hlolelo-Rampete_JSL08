@@ -1,2 +1,4 @@
 Imagine a bank account as a box (object). Inside this box, you have various items (properties) like the account holder's name, account number, and balance. 
 You might also have tools (methods) to add (deposit) or take out money (withdraw).
+
+In our banking analogy, think of methods as services offered by the bank, like depositing or withdrawing money.
