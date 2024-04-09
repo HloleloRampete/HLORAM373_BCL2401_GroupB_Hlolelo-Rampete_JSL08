@@ -2,3 +2,36 @@ Imagine a bank account as a box (object). Inside this box, you have various item
 You might also have tools (methods) to add (deposit) or take out money (withdraw).
 
 In our banking analogy, think of methods as services offered by the bank, like depositing or withdrawing money.
+
+
+let bankAccount = {
+  holderName: "Jamie",
+  balance: 500,
+  deposit: function(amount) {
+    this.balance += amount;
+  },
+  withdraw: function(amount) {
+    if(amount <= this.balance) {
+      this.balance -= amount;
+    } else {
+      console.log("Insufficient funds.");
+    }
+  },
+  displayBalance: function() {
+    console.log("Current balance: $" + this.balance);
+  }
+};
+
+// Sometimes you need to review all the folders in your filing cabinet. Similarly, you might want to look through all the properties of an object. 
+// This loop will display all the properties and their values, but not the methods.
+for(let key in bankAccount) {
+  console.log(key + ": " + bankAccount[key]);
+}
+
+
+Imagine you're in a bank with many different services, like opening an account, depositing money, or getting a loan.
+1. The global object in JavaScript is like the main lobby of the bank, where all these services are accessible.
+
+Imagine walking into a bank. Each type of bank account (savings, checking, loan) has its own set of features and rules, but they all share some common characteristics.
+1. Prototypes = Think of it as the general outline for a bank account. It specifies that every account should have an account number and balance, but doesn't specify what those are. 
+2. Prototype-based Inheritance: It's like saying, "All bank accounts can perform transactions, so my savings account should be able to do that too because it's a type of bank account."
