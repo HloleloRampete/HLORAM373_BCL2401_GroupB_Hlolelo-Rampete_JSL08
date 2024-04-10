@@ -31,6 +31,7 @@ console.log(branchA === branchB); // Verify that both instances refer to the sam
 **Challenges**
 1. Global State: Singleton pattern introduces a global state, which can make debugging and testing more challenging.
 2. Dependency Injection: Singleton pattern doesn't support dependency injection well, which might lead to tight coupling.
+   
 **Benefits**
 1. Single Instance: Guarantees that there's only one instance of the class, preventing multiple instances from being created accidentally.
 2. Global Access: Provides a global point of access to the instance, making it easy to manage and access branch information from anywhere in the codebase.
