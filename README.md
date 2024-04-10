@@ -8,6 +8,7 @@ This project utilizes the Singleton design pattern to manage bank branch informa
 The BankBranch class is defined to manage branch information. It includes:
 
 ***1. Constructor***: Takes *branchInfo* as a parameter. If no instance exists (bankBranchInstance is null), it creates a new instance with the provided *branchInfo* and assigns it to *bankBranchInstance*. If an instance already exists, it returns the existing instance.
+
 ***2. getBranchInfo()***: A method that returns the branch information stored in the instance.
 
 **Usage**
@@ -34,5 +35,5 @@ console.log(branchA === branchB); // Verify that both instances refer to the sam
 1. Single Instance: Guarantees that there's only one instance of the class, preventing multiple instances from being created accidentally.
 2. Global Access: Provides a global point of access to the instance, making it easy to manage and access branch information from anywhere in the codebase.
 3. Memory Efficiency: Ensures efficient memory usage by reusing the same instance throughout the application.
-4. 
+   
 By leveraging the Singleton pattern, this Bank Branch Management system maintains a centralized and efficient approach to managing branch information, akin to how a well-organized bank efficiently handles its operations and services.
